@@ -1,0 +1,1178 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello, my name is  [Juste](name)
+    - hi, I am [Juste](name)
+    - hello  there,my name is [Juste](name)
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - fine
+    - Fine
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: fungal_infection
+  examples: |
+    - I am felling symptoms like nodal skin eruptions, dischromic patches
+    - I am suffering from symptoms like   patches, skin rash, itching
+    - I have symptoms like nodal skin eruption,skin rash, itching
+    - I get symptoms problems like dischromic patches, nodal skin eruptions
+
+- intent: allergy
+  examples: |
+    - I am felling symptoms like "chills", "continuous sneezing", "shivering"
+    - I am suffering from symptoms like "continuous sneezing", "shivering","watering from eyes"
+    - I have symptoms like "chills","shivering","watering from eyes""
+    - I get symptoms problems like "chills", "continuous sneezing", "shivering", "watering from eyes"
+
+- intent: gerd
+  examples: |
+    - I am felling symptoms like "ulcers on tongue", "vomiting", 
+    - I am suffering from symptoms like "stomach pain", "cough", "chest pain", "acidity"
+    - I have symptoms like "vomiting","cough", "chest pain", "acidity"
+    - I get symptoms problems like "ulcers on tongue", "vomiting", "stomach pain", "cough", "chest pain", "acidity"
+
+- intent: chronic_cholestasis
+  examples: |
+    - I am felling symptoms like "yellowing of eyes", "vomiting", "abdominal pain", "yellowish skin"
+    - I am suffering from symptoms like "loss of appetite", "nausea",
+    - I have symptoms like "loss of appetite", "nausea","itching"
+    - I get symptoms problems like "yellowing of eyes", "vomiting", "abdominal pain", "yellowish skin", "loss of appetite", "nausea", "itching"
+
+- intent: Drug_Reaction
+  examples: |
+    - I am felling symptoms like "stomach pain", "spotting urination"
+    - I am suffering from symptoms like "burning micturition", "itching", 
+    - I have symptoms like "spotting urination", "burning micturition"
+    - I get symptoms problems like "stomach pain", "spotting urination", "burning micturition", "itching", "skin rash"
+
+- intent: peptic_ulcer_Diseases
+  examples: |
+    - I am felling symptoms like "vomiting", "abdominal pain"
+    - I am suffering from symptoms like "loss of appetite", "internal itching", "indigestion", 
+    - I have symptoms like "loss of appetite", "internal itching", "indigestion", "passage of gases"
+    - I get symptoms problems like"vomiting", "abdominal pain", "loss of appetite", "internal itching", "indigestion", "passage of gases"
+
+- intent: Aids
+  examples: |
+    - I am felling symptoms like patches in throat", "extra marital contacts"
+    - I am suffering from symptoms like "muscle wasting", "high fever" 
+    - I have symptoms like "extra marital contacts", "muscle wasting"
+    - I get symptoms problems like "patches in throat", "extra marital contacts", "muscle wasting", "high fever"
+
+- intent: diabetes
+  examples: |
+    - I am felling symptoms like "polyuria", "weight loss", "excessive hunger", "obesity"
+    - I am suffering from symptoms like "restlessness", "lethargy", "irregular sugar level", "blurred and distorted vision", "increased appetite", "fatigue" 
+    - I have symptoms like "excessive hunger", "obesity", "restlessness", "lethargy", "irregular sugar level", "blurred and distorted vision",
+    - I get symptoms problems like "polyuria", "weight loss", "excessive hunger", "obesity", "restlessness", "lethargy", "irregular sugar level", "blurred and distorted vision", "increased appetite", "fatigue"  
+
+- intent: Gastroenteritis
+  examples: |
+    - I am felling symptoms like "sunken eyes", "dehydration"
+    - I am suffering from symptoms like "vomiting", "diarrhoea"
+    - I have symptoms like "dehydration", "vomiting"
+    - I get symptoms problems like "sunken eyes", "dehydration", "vomiting", "diarrhoea"
+
+- intent: hypertension
+  examples: |
+    - I am felling symptoms like "lack of concentration", "loss of balance",
+    - I am suffering from symptoms like "dizziness", "headache", "chest pain"
+    - I have symptoms like "loss of balance", "dizziness",
+    - I get symptoms problems like "lack of concentration", "loss of balance", "dizziness", "headache", "chest pain"
+
+- intent: migraine
+  examples: |
+    - I am felling symptoms like "stiff neck", "visual disturbances", "irritability", "excessive hunger"
+    - I am suffering from symptoms like "indigestion", "blurred and distorted vision", "headache"
+    - I have symptoms like distorted vision", "headache", "depression", "acidity"
+    - I get symptoms problems like "stiff neck", "visual disturbances", "irritability", "excessive hunger", "indigestion", "blurred and distorted vision", "headache", "depression", "acidity" pain"
+
+- intent: cervical_spondylosis
+  examples: |
+    - I am felling symptoms like "stiff neck", "visual disturbances", "irritability", "excessive hunger"
+    - I am suffering from symptoms like "indigestion", "blurred and distorted vision", "headache"
+    - I have symptoms like distorted vision", "headache", "depression", "acidity"
+    - I get symptoms problems like "stiff neck", "visual disturbances", "irritability", "excessive hunger", "indigestion", "blurred and distorted vision", "headache", "depression", "acidity" pain"
+
+- intent: paralysis_brain_hemorrhage
+  examples: |
+    - I am felling symptoms like "headache", "vomiting", 
+    - I am suffering from symptoms like "weakness of one body side", "altered sensorium"
+    - I have symptoms like"vomiting", "weakness of one body side"
+    - I get symptoms problems like "headache", "vomiting", "weakness of one body side", "altered sensorium"
+
+
+- intent: jaundice
+  examples: |
+    - I am felling symptoms like patches in vomiting,weight loss
+    - I am suffering from symptoms like abdominal pain,yellowish skin
+    - I have symptoms like high fever
+    - I get symptoms problems like  'vomiting', 'weight loss', 'abdominal pain', 'yellowish skin', 'high fever', 'dark urine', 'itching', 'fatigue '
+
+- intent: malaria
+  examples: |
+    - I am felling symptoms like patches in vomiting,sweating
+    - I am suffering from symptoms like chills,diarrhoea
+    - I have symptoms like high fever
+    - I get symptoms problems like  'vomiting', 'sweating', 'chills', 'diarrhoea', 'high fever', 'nausea', 'muscle pain', 'headache '
+
+- intent: chicken_pox
+  examples: |
+    - I am felling symptoms like patches in red spots over body,malaise
+    - I am suffering from symptoms like loss of appetite,mild fever
+    - I have symptoms like high fever
+    - I get symptoms problems like  'red spots over body', 'malaise', 'loss of appetite', 'mild fever', 'high fever', 'swelled lymph nodes', 'lethargy', 'itching', 'headache', 'fatigue', 'skin rash '
+
+- intent: dengue
+  examples: |
+   - I am felling symptoms like patches in red spots over body,vomiting
+   - I am suffering from symptoms like chills,loss of appetite
+   - I have symptoms like pain behind the eyes
+   - I get symptoms problems like  'red spots over body', 'vomiting', 'chills', 'loss of appetite', 'pain behind the eyes', 'joint pain', 'high fever', 'nausea', 'muscle pain', 'back pain', 'headache', 'skin rash', 'malaise', 'fatigue '
+
+- intent: typhoid
+  examples: |
+    - I am felling symptoms like patches in vomiting,abdominal pain
+    - I am suffering from symptoms like chills,diarrhoea
+    - I have symptoms like high fever
+    - I get symptoms problems like  'vomiting', 'abdominal pain', 'chills', 'diarrhoea', 'high fever', 'toxic look typhos', 'nausea', 'headache', 'constipation', 'belly pain', 'fatigue '
+
+- intent: hepatitis_a
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,vomiting
+    - I am suffering from symptoms like abdominal pain,yellowish skin
+    - I have symptoms like loss of appetite
+    - I get symptoms problems like  'yellowing of eyes', 'vomiting', 'abdominal pain', 'yellowish skin', 'loss of appetite', 'diarrhoea', 'mild fever', 'joint pain', 'dark urine', 'nausea', 'muscle pain '
+
+- intent: hepatitis_b
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,abdominal pain
+    - I am suffering from symptoms like receiving blood transfusion,yellowish skin
+    - I have symptoms like loss of appetite
+    - I get symptoms problems like  'yellowing of eyes', 'abdominal pain', 'receiving blood transfusion', 'yellowish skin', 'loss of appetite', 'receiving unsterile injections', 'lethargy', 'dark urine', 'itching', 'yellow urine', 'malaise', 'fatigue '
+
+- intent: hepatitis_c
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,yellowish skin
+    - I am suffering from symptoms like loss of appetite,family history
+    - I have symptoms like nausea
+    - I get symptoms problems like  'yellowing of eyes', 'yellowish skin', 'loss of appetite', 'family history', 'nausea', 'fatigue '
+
+- intent: hepatitis_d
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,vomiting
+    - I am suffering from symptoms like abdominal pain,yellowish skin
+    - I have symptoms like loss of appetite
+    - I get symptoms problems like  'yellowing of eyes', 'vomiting', 'abdominal pain', 'yellowish skin', 'loss of appetite', 'joint pain', 'dark urine', 'nausea', 'fatigue '
+
+- intent: hepatitis_e
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,vomiting
+    - I am suffering from symptoms like abdominal pain,yellowish skin
+    - I have symptoms like stomach bleeding
+    - I get symptoms problems like 'yellowing of eyes', 'vomiting', 'abdominal pain', 'yellowish skin', 'stomach bleeding', 'loss of appetite', 'joint pain', 'high fever', 'dark urine', 'nausea', 'acute liver failure', 'coma', 'fatigue '
+
+- intent: alcoholic_hepatitis
+  examples: |
+    - I am felling symptoms like patches in vomiting,abdominal pain
+    - I am suffering from symptoms like yellowish skin,swelling of stomach
+    - I have symptoms like fluid overload ,abdominal pain
+    - I get symptoms problems like  'vomiting', 'abdominal pain', 'yellowish skin', 'swelling of stomach', 'fluid overload', 'history of alcohol consumption', 'distention of abdomen '
+
+- intent: tuberculosis
+  examples: |
+    - I am felling symptoms like patches in yellowing of eyes,breathlessness
+    - I am suffering from symptoms like vomiting,weight loss
+    - I have symptoms like sweating
+    - I get symptoms problems like  'yellowing of eyes', 'breathlessness', 'vomiting', 'weight loss', 'sweating', 'chills', 'loss of appetite', 'mild fever', 'high fever', 'swelled lymph nodes', 'blood in sputum', 'phlegm', 'cough', 'chest pain', 'malaise', 'fatigue '
+
+- intent: common_cold
+  examples: |
+    - I am felling symptoms like patches in loss of smell,sinus pressure
+    - I am suffering from symptoms like congestion,throat irritation
+    - I have symptoms like chills
+    - I get symptoms problems like  'loss of smell', 'sinus pressure', 'congestion', 'throat irritation', 'chills', 'continuous sneezing', 'high fever', 'swelled lymph nodes', 'runny nose', 'redness of eyes', 'muscle pain', 'phlegm', 'headache', 'cough', 'chest pain', 'malaise', 'fatigue '
+
+- intent: pneumonia
+  examples: |
+    - I am felling symptoms like patches in loss of smell,sinus pressure
+    - I am suffering from symptoms like congestion,throat irritation
+    - I have symptoms like chills
+    - I get symptoms problems like  'loss of smell', 'sinus pressure', 'congestion', 'throat irritation', 'chills', 'continuous sneezing', 'high fever', 'swelled lymph nodes', 'runny nose', 'redness of eyes', 'muscle pain', 'phlegm', 'headache', 'cough', 'chest pain', 'malaise', 'fatigue '
+
+- intent: dimorphic_hemmorhoids_piles
+  examples: |
+   - I am felling symptoms like patches in irritation in anus,pain in anal region
+   - I am suffering from symptoms like pain during bowel movements
+   - I have symptoms like bloody stool
+   - I get symptoms problems like  'irritation in anus', 'pain in anal region', 'pain during bowel movements', 'bloody stool', 'constipation '
+
+- intent: heart_attack
+  examples: |
+    - I am felling symptoms like patches in breathlessness,chest pain
+    - I am suffering from symptoms like vomiting
+    - I have symptoms like sweating
+    - I get symptoms problems like  'breathlessness', 'chest pain', 'vomiting', 'sweating '
+
+- intent: varicose_veins
+  examples: |
+    - I am felling symptoms like patches in prominent veins on calf,bruising
+    - I am suffering from symptoms like obesity,cramps
+    - I have symptoms like swollen blood vessels
+    - I get symptoms problems like  'prominent veins on calf', 'bruising', 'obesity', 'cramps', 'swollen blood vessels', 'swollen legs', 'fatigue '
+ 
+- intent: hypothyroidism
+  examples: |
+    - I am felling symptoms like patches in puffy face and eyes,mood swings
+    - I am suffering from symptoms like enlarged thyroid,weight gain
+    - I have symptoms like irritability
+    - I get symptoms problems like  'puffy face and eyes', 'mood swings', 'enlarged thyroid', 'weight gain', 'irritability', 'brittle nails', 'lethargy', 'swollen extremeties', 'abnormal menstruation', 'cold hands and feets', 'dizziness', 'depression', 'fatigue '
+ 
+- intent: hyperthyroidism
+  examples: |
+    - I am felling symptoms like patches in sweating,weight loss
+    - I am suffering from symptoms like mood swings,fast heart rate
+    - I have symptoms like muscle weakness
+    - I get symptoms problems like 'sweating', 'weight loss', 'mood swings', 'fast heart rate', 'muscle weakness', 'diarrhoea', 'irritability', 'excessive hunger', 'restlessness', 'abnormal menstruation', 'fatigue '
+ 
+- intent: hypoglycemia
+  examples: |
+    - I am felling symptoms like patches in vomiting,sweating
+    - I am suffering from symptoms like anxiety,irritability
+    - I have symptoms like excessive hunger
+    - I get symptoms problems like 'vomiting', 'sweating', 'anxiety', 'irritability', 'excessive hunger', 'drying and tingling lips', 'palpitations', 'nausea', 'blurred and distorted vision', 'headache', 'slurred speech', 'fatigue'
+
+- intent: osteoarthristis
+  examples: |
+    - I am felling symptoms like patches in neck pain,painful walking
+    - I am suffering from symptoms like joint pain,hip joint pain
+    - I have symptoms like knee pain
+    - I get symptoms problems like 'neck pain', 'painful walking', 'joint pain', 'hip joint pain', 'knee pain', 'swelling joints'
+
+- intent: arthritis
+  examples: |
+    - I am felling symptoms like patches in movement stiffness,muscle weakness
+    - I am suffering from symptoms like painful walking
+    - I have symptoms like swelling joints
+    - I get symptoms problems like 'movement stiffness', 'muscle weakness', 'painful walking', 'swelling joints', 'stiff neck'
+
+- intent: vertigo_paroymsal_positional_vertigo
+  examples: |
+    - I am felling symptoms like patches in unsteadiness,vomiting
+    - I am suffering from symptoms like loss of balance,spinning movements
+    - I have symptoms like nausea
+    - I get symptoms problems like 'unsteadiness', 'vomiting', 'loss of balance', 'spinning movements', 'nausea', 'headache'
+
+- intent: acne
+  examples: |
+    - I am felling symptoms like patches in blackheads,scurring
+    - I am suffering from symptoms like skin rash
+    - I have symptoms like pus filled pimples
+    - I get symptoms problems like 'blackheads', 'scurring', 'skin rash', 'pus filled pimples'
+
+- intent: urinary_tract_infection
+  examples: |
+    - I am felling symptoms like patches in foul smell of urine,bladder discomfort
+    - I am suffering from symptoms like burning micturition
+    - I have symptoms like continuous feel of urine
+    - I get symptoms problems like 'foul smell of urine', 'bladder discomfort', 'burning micturition', 'continuous feel of urine'
+
+- intent: psoriasis
+  examples: |
+    - I am felling symptoms like patches in silver like dusting,joint pain
+    - I am suffering from symptoms like skin peeling,small dents in nails
+    - I have symptoms like inflammatory nails
+    - I get symptoms problems like 'silver like dusting', 'joint pain', 'skin peeling', 'small dents in nails', 'inflammatory nails', 'skin rash'
+
+- intent: impetigo
+  examples: |
+    - I am felling symptoms like patches in blister,high fever
+    - I am suffering from symptoms like yellow crust ooze
+    - I have symptoms like red sore around nose
+    - I get symptoms problems like 'blister', 'high fever', 'yellow crust ooze', 'red sore around nose', 'skin rash'
+
+- intent: fungal_precautions
+  examples: |
+    - what precautions should i take for fungal_infection
+    - how to prevent from fungal precaution
+
+- intent: allergy_precautions
+  examples: |
+    - what precautions should i take for allergy?
+    - how to prevent allergy?
+ 
+- intent: gerd_precautions
+  examples: |
+    - what precautions should i take for gerd?
+    - how to prevent gerd?
+ 
+- intent: chronic_cholestasis_precautions
+  examples: |
+    - what precautions should i take for chronic cholestasis?
+    - how to prevent chronic cholestasis?
+ 
+- intent: drug_reaction_precautions
+  examples: |
+    - what precautions should i take for drug reaction?
+    - how to prevent drug reaction?
+ 
+- intent: peptic_ulcer_diseae_precautions
+  examples: |
+    - what precautions should i take for peptic ulcer diseae?
+    - how to prevent peptic ulcer diseae?
+ 
+- intent: aids_precautions
+  examples: |
+    - what precautions should i take for aids?
+    - how to prevent aids?
+ 
+- intent: diabetes_precautions
+  examples: |
+    - what precautions should i take for diabetes?
+    - how to prevent diabetes?
+ 
+- intent: gastroenteritis_precautions
+  examples: |
+    - what precautions should i take for gastroenteritis?
+    - how to prevent gastroenteritis?
+ 
+- intent: bronchial_asthma_precautions
+  examples: |
+    - what precautions should i take for bronchial asthma?
+    - how to prevent bronchial asthma?
+ 
+- intent: hypertension_precautions
+  examples: |
+    - what precautions should i take for hypertension?
+    - how to prevent hypertension?
+ 
+- intent: migraine_precautions
+  examples: |
+    - what precautions should i take for migraine?
+    - how to prevent migraine?
+ 
+- intent: cervical_spondylosis_precautions
+  examples: |
+    - what precautions should i take for cervical spondylosis?
+    - how to prevent cervical spondylosis?
+ 
+- intent: paralysis_brain_hemorrhage_precautions
+  examples: |
+    - what precautions should i take for paralysis brain hemorrhage?
+    - how to prevent paralysis brain hemorrhage?
+ 
+- intent: jaundice_precautions
+  examples: |
+    - what precautions should i take for jaundice?
+    - how to prevent jaundice?
+ 
+- intent: malaria_precautions
+  examples: |
+    - what precautions should i take for malaria?
+    - how to prevent malaria?
+ 
+- intent: chicken_pox_precautions
+  examples: |
+    - what precautions should i take for chicken pox?
+    - how to prevent chicken pox?
+ 
+- intent: dengue_precautions
+  examples: |
+    - what precautions should i take for dengue?
+    - how to prevent dengue?
+ 
+- intent: typhoid_precautions
+  examples: |
+    - what precautions should i take for typhoid?
+    - how to prevent typhoid?
+ 
+- intent: hepatitis_a_precautions
+  examples: |
+    - what precautions should i take for hepatitis a?
+    - how to prevent hepatitis a?
+ 
+- intent: hepatitis_b_precautions
+  examples: |
+    - what precautions should i take for hepatitis b?
+    - how to prevent hepatitis b?
+ 
+- intent: hepatitis_c_precautions
+  examples: |
+    - what precautions should i take for hepatitis c?
+    - how to prevent hepatitis c?
+ 
+- intent: hepatitis_d_precautions
+  examples: |
+    - what precautions should i take for hepatitis d?
+    - how to prevent hepatitis d?
+ 
+- intent: hepatitis_e_precautions
+  examples: |
+    - what precautions should i take for hepatitis e?
+    - how to prevent hepatitis e?
+ 
+- intent: alcoholic_hepatitis_precautions
+  examples: |
+    - what precautions should i take for alcoholic hepatitis?
+    - how to prevent alcoholic hepatitis?
+ 
+- intent: tuberculosis_precautions
+  examples: |
+    - what precautions should i take for tuberculosis?
+    - how to prevent tuberculosis?
+ 
+- intent: common_cold_precautions
+  examples: |
+    - what precautions should i take for common cold?
+    - how to prevent common cold?
+ 
+- intent: pneumonia_precautions
+  examples: |
+    - what precautions should i take for pneumonia?
+    - how to prevent pneumonia?
+ 
+- intent: dimorphic_hemmorhoids_piles_precautions
+  examples: |
+    - what precautions should i take for dimorphic hemmorhoids piles?
+    - how to prevent dimorphic hemmorhoids piles?
+ 
+- intent: heart_attack_precautions
+  examples: |
+    - what precautions should i take for heart attack?
+    - how to prevent heart attack?
+ 
+- intent: varicose_veins_precautions
+  examples: |
+    - what precautions should i take for varicose veins?
+    - how to prevent varicose veins?
+ 
+- intent: hypothyroidism_precautions
+  examples: |
+    - what precautions should i take for hypothyroidism?
+    - how to prevent hypothyroidism?
+ 
+- intent: hyperthyroidism_precautions
+  examples: |
+    - what precautions should i take for hyperthyroidism?
+    - how to prevent hyperthyroidism?
+ 
+- intent: hypoglycemia_precautions
+  examples: |
+    - what precautions should i take for hypoglycemia?
+    - how to prevent hypoglycemia?
+ 
+- intent: osteoarthristis_precautions
+  examples: |
+    - what precautions should i take for osteoarthristis?
+    - how to prevent osteoarthristis?
+ 
+- intent: arthritis_precautions
+  examples: |
+    - what precautions should i take for arthritis?
+    - how to prevent arthritis?
+ 
+- intent: vertigo_paroymsal_positional_vertigo_precautions
+  examples: |
+    - what precautions should i take for vertigo paroymsal positional vertigo?
+    - how to prevent vertigo paroymsal positional vertigo?
+ 
+- intent: acne_precautions
+  examples: |
+    - what precautions should i take for acne?
+    - how to prevent acne?
+ 
+- intent: urinary_tract_infection_precautions
+  examples: |
+    - what precautions should i take for urinary tract infection?
+    - how to prevent urinary tract infection?
+ 
+- intent: psoriasis_precautions
+  examples: |
+    - what precautions should i take for psoriasis?
+    - how to prevent psoriasis?
+ 
+- intent: impetigo_precautions
+  examples: |
+    - what precautions should i take for impetigo?
+    - how to prevent impetigo?
+
+- intent: fungal_medicine
+  examples: |
+    - what medicine should i take for Fungal diseases?
+    - what type of medicine i have to take for fungal diseases
+    - Which medicine is good for fungal diseases
+    - can u suggest me medicine for fungal diseases
+ 
+- intent: Food_allergy_medicine
+  examples: |
+    - what medicine should i take for Food allergy diseases?
+    - Which medicine is good for Food allergy diseases?
+    - can you suggest me medicine for Food allergy diseases.
+ 
+- intent: GERD_medicine
+  examples: |
+    - what medicine should i take for GERD diseases?
+    - Which medicine is good for GERD diseases?
+    - can you suggest me medicine for GERD diseases.
+ 
+- intent: Chronic_cholestasis_medicine
+  examples: |
+    - what medicine should i take for Chronic cholestasis diseases?
+    - Which medicine is good for Chronic cholestasis diseases?
+    - can you suggest me medicine for Chronic cholestasis diseases.
+ 
+- intent: Drug_allergy_medicine
+  examples: |
+    - what medicine should i take for Drug allergy diseases?
+    - Which medicine is good for Drug allergy diseases?
+    - can you suggest me medicine for Drug allergy diseases.
+ 
+- intent: Peptic_Ulcer_medicine
+  examples: |
+    - what medicine should i take for Peptic Ulcer diseases?
+    - Which medicine is good for Peptic Ulcer diseases?
+    - can you suggest me medicine for Peptic Ulcer diseases.
+ 
+- intent: Diabetes_medicine
+  examples: |
+    - what medicine should i take for Diabetes diseases?
+    - Which medicine is good for Diabetes diseases?
+    - can you suggest me medicine for Diabetes diseases.
+ 
+- intent: Gastroenteritis_medicine
+  examples: |
+    - what medicine should i take for Gastroenteritis diseases?
+    - Which medicine is good for Gastroenteritis diseases?
+    - can you suggest me medicine for Gastroenteritis diseases.
+ 
+- intent: Asthma_medicine
+  examples: |
+    - what medicine should i take for Asthma diseases?
+    - Which medicine is good for Asthma diseases?
+    - can you suggest me medicine for Asthma diseases.
+ 
+- intent: Hypertension_medicine
+  examples: |
+    - what medicine should i take for Hypertension diseases?
+    - Which medicine is good for Hypertension diseases?
+    - can you suggest me medicine for Hypertension diseases.
+ 
+- intent: Migraine_medicine
+  examples: |
+    - what medicine should i take for Migraine diseases?
+    - Which medicine is good for Migraine diseases?
+    - can you suggest me medicine for Migraine diseases.
+ 
+- intent: Cervical_spondylosis_medicine
+  examples: |
+    - what medicine should i take for Cervical spondylosis diseases?
+    - Which medicine is good for Cervical spondylosis diseases?
+    - can you suggest me medicine for Cervical spondylosis diseases.
+ 
+- intent: Brain_hemorrhage_medicine
+  examples: |
+    - what medicine should i take for Brain hemorrhage diseases?
+    - Which medicine is good for Brain hemorrhage diseases?
+    - can you suggest me medicine for Brain hemorrhage diseases.
+ 
+- intent: Jaundice_medicine
+  examples: |
+    - what medicine should i take for Jaundice diseases?
+    - Which medicine is good for Jaundice diseases?
+    - can you suggest me medicine for Jaundice diseases.
+ 
+- intent: Malaria_medicine
+  examples: |
+    - what medicine should i take for Malaria diseases?
+    - Which medicine is good for Malaria diseases?
+    - can you suggest me medicine for Malaria diseases.
+ 
+- intent: Chicken_pox_medicine
+  examples: |
+    - what medicine should i take for Chicken pox diseases?
+    - Which medicine is good for Chicken pox diseases?
+    - can you suggest me medicine for Chicken pox diseases.
+ 
+- intent: Dengue_medicine
+  examples: |
+    - what medicine should i take for Dengue diseases?
+    - Which medicine is good for Dengue diseases?
+    - can you suggest me medicine for Dengue diseases.
+ 
+- intent: Typhoid_medicine
+  examples: |
+    - what medicine should i take for Typhoid diseases?
+    - Which medicine is good for Typhoid diseases?
+    - can you suggest me medicine for Typhoid diseases.
+ 
+- intent: Hepatitis_A_medicine
+  examples: |
+    - what medicine should i take for Hepatitis A diseases?
+    - Which medicine is good for Hepatitis A diseases?
+    - can you suggest me medicine for Hepatitis A diseases.
+ 
+- intent: Tuberculosis_medicine
+  examples: |
+    - what medicine should i take for Tuberculosis diseases?
+    - Which medicine is good for Tuberculosis diseases?
+    - can you suggest me medicine for Tuberculosis diseases.
+ 
+- intent: Common_Cold_medicine
+  examples: |
+    - what medicine should i take for Common Cold diseases?
+    - Which medicine is good for Common Cold diseases?
+    - can you suggest me medicine for Common Cold diseases.
+ 
+- intent: Pneumonia_medicine
+  examples: |
+    - what medicine should i take for Pneumonia diseases?
+    - Which medicine is good for Pneumonia diseases?
+    - can you suggest me medicine for Pneumonia diseases.
+ 
+- intent: Piles_medicine
+  examples: |
+    - what medicine should i take for Piles diseases?
+    - Which medicine is good for Piles diseases?
+    - can you suggest me medicine for Piles diseases.
+ 
+- intent: Heart_attack_medicine
+  examples: |
+    - what medicine should i take for Heart attack diseases?
+    - Which medicine is good for Heart attack diseases?
+    - can you suggest me medicine for Heart attack diseases.
+ 
+- intent: Varicose_veins_medicine
+  examples: |
+    - what medicine should i take for Varicose veins diseases?
+    - Which medicine is good for Varicose veins diseases?
+    - can you suggest me medicine for Varicose veins diseases.
+ 
+- intent: Hypothyroidism_medicine
+  examples: |
+    - what medicine should i take for Hypothyroidism diseases?
+    - Which medicine is good for Hypothyroidism diseases?
+    - can you suggest me medicine for Hypothyroidism diseases.
+ 
+- intent: Hypoglycemia_medicine
+  examples: |
+    - what medicine should i take for Hypoglycemia diseases?
+    - Which medicine is good for Hypoglycemia diseases?
+    - can you suggest me medicine for Hypoglycemia diseases.
+ 
+- intent: Osteoarthritis_medicine
+  examples: |
+    - what medicine should i take for Osteoarthritis diseases?
+    - Which medicine is good for Osteoarthritis diseases?
+    - can you suggest me medicine for Osteoarthritis diseases.
+ 
+- intent: Arthritis_medicine
+  examples: |
+    - what medicine should i take for Arthritis diseases?
+    - Which medicine is good for Arthritis diseases?
+    - can you suggest me medicine for Arthritis diseases.
+ 
+- intent: Paroxysmal_Positional_Vertigo_medicine
+  examples: |
+    - what medicine should i take for Paroxysmal Positional Vertigo diseases?
+    - Which medicine is good for Paroxysmal Positional Vertigo diseases?
+    - can you suggest me medicine for Paroxysmal Positional Vertigo diseases.
+ 
+- intent: Acne_medicine
+  examples: |
+    - what medicine should i take for Acne diseases?
+    - Which medicine is good for Acne diseases?
+    - can you suggest me medicine for Acne diseases.
+ 
+- intent: Urinary_tract_infection_medicine
+  examples: |
+    - what medicine should i take for Urinary tract infection diseases?
+    - Which medicine is good for Urinary tract infection diseases?
+    - can you suggest me medicine for Urinary tract infection diseases.
+ 
+- intent: Psoriasis_medicine
+  examples: |
+    - what medicine should i take for Psoriasis diseases?
+    - Which medicine is good for Psoriasis diseases?
+    - can you suggest me medicine for Psoriasis diseases.
+ 
+- intent: Impetigo_medicine
+  examples: |
+    - what medicine should i take for Impetigo diseases?
+    - Which medicine is good for Impetigo diseases?
+    - can you suggest me medicine for Impetigo diseases.
+ 
+- intent: Swine_flu_medicine
+  examples: |
+    - what medicine should i take for Swine flu diseases?
+    - Which medicine is good for Swine flu diseases?
+    - can you suggest me medicine for Swine flu diseases.
+ 
+- intent: ADHD_medicine
+  examples: |
+    - what medicine should i take for ADHD diseases?
+    - Which medicine is good for ADHD diseases?
+    - can you suggest me medicine for ADHD diseases.
+ 
+- intent: Bird_flu_medicine
+  examples: |
+    - what medicine should i take for Bird flu diseases?
+    - Which medicine is good for Bird flu diseases?
+    - can you suggest me medicine for Bird flu diseases.
+ 
+- intent: Chikungunya_medicine
+  examples: |
+    - what medicine should i take for Chikungunya diseases?
+    - Which medicine is good for Chikungunya diseases?
+    - can you suggest me medicine for Chikungunya diseases.
+ 
+- intent: Cholera_medicine
+  examples: |
+    - what medicine should i take for Cholera diseases?
+    - Which medicine is good for Cholera diseases?
+    - can you suggest me medicine for Cholera diseases.
+ 
+- intent: Depression_medicine
+  examples: |
+    - what medicine should i take for Depression diseases?
+    - Which medicine is good for Depression diseases?
+    - can you suggest me medicine for Depression diseases.
+ 
+- intent: Epilepsy_medicine
+  examples: |
+    - what medicine should i take for Epilepsy diseases?
+    - Which medicine is good for Epilepsy diseases?
+    - can you suggest me medicine for Epilepsy diseases.
+ 
+- intent: Gonorrhoea_medicine
+  examples: |
+    - what medicine should i take for Gonorrhoea diseases?
+    - Which medicine is good for Gonorrhoea diseases?
+    - can you suggest me medicine for Gonorrhoea diseases.
+ 
+- intent: Gout_medicine
+  examples: |
+    - what medicine should i take for Gout diseases?
+    - Which medicine is good for Gout diseases?
+    - can you suggest me medicine for Gout diseases.
+ 
+- intent: Thyroid_medicine
+  examples: |
+    - what medicine should i take for Thyroid diseases?
+    - Which medicine is good for Thyroid diseases?
+    - can you suggest me medicine for Thyroid diseases.
+ 
+- intent: Herpes_medicine
+  examples: |
+    - what medicine should i take for Herpes diseases?
+    - Which medicine is good for Herpes diseases?
+    - can you suggest me medicine for Herpes diseases.
+ 
+- intent: Insomnia_medicine
+  examples: |
+    - what medicine should i take for Insomnia diseases?
+    - Which medicine is good for Insomnia diseases?
+    - can you suggest me medicine for Insomnia diseases.
+ 
+- intent: Conjunctivitis_medicine
+  examples: |
+    - what medicine should i take for Conjunctivitis diseases?
+    - Which medicine is good for Conjunctivitis diseases?
+    - can you suggest me medicine for Conjunctivitis diseases.
+ 
+- intent: Kidney_stones_medicine
+  examples: |
+    - what medicine should i take for Kidney stones diseases?
+    - Which medicine is good for Kidney stones diseases?
+    - can you suggest me medicine for Kidney stones diseases.
+ 
+- intent: PCOS_medicine
+  examples: |
+    - what medicine should i take for PCOS diseases?
+    - Which medicine is good for PCOS diseases?
+    - can you suggest me medicine for PCOS diseases.
+ 
+- intent: Rabies_medicine
+  examples: |
+    - what medicine should i take for Rabies diseases?
+    - Which medicine is good for Rabies diseases?
+    - can you suggest me medicine for Rabies diseases.
+ 
+- intent: Schizophrenia_medicine
+  examples: |
+    - what medicine should i take for Schizophrenia diseases?
+    - Which medicine is good for Schizophrenia diseases?
+    - can you suggest me medicine for Schizophrenia diseases.
+ 
+- intent: Diphtheria_medicine
+  examples: |
+    - what medicine should i take for Diphtheria diseases?
+    - Which medicine is good for Diphtheria diseases?
+    - can you suggest me medicine for Diphtheria diseases.
+ 
+- intent: E._coli_Infection_medicine
+  examples: |
+    - what medicine should i take for E. coli Infection diseases?
+    - Which medicine is good for E. coli Infection diseases?
+    - can you suggest me medicine for E. coli Infection diseases.
+ 
+- intent: Giardiasis_medicine
+  examples: |
+    - what medicine should i take for Giardiasis diseases?
+    - Which medicine is good for Giardiasis diseases?
+    - can you suggest me medicine for Giardiasis diseases.
+ 
+- intent: Lyme_disease_medicine
+  examples: |
+    - what medicine should i take for Lyme disease diseases?
+    - Which medicine is good for Lyme disease diseases?
+    - can you suggest me medicine for Lyme disease diseases.
+ 
+- intent: Measles_medicine
+  examples: |
+    - what medicine should i take for Measles diseases?
+    - Which medicine is good for Measles diseases?
+    - can you suggest me medicine for Measles diseases.
+ 
+- intent: Meningitis_medicine
+  examples: |
+    - what medicine should i take for Meningitis diseases?
+    - Which medicine is good for Meningitis diseases?
+    - can you suggest me medicine for Meningitis diseases.
+ 
+- intent: Mumps_medicine
+  examples: |
+    - what medicine should i take for Mumps diseases?
+    - Which medicine is good for Mumps diseases?
+    - can you suggest me medicine for Mumps diseases.
+ 
+- intent: Polio_medicine
+  examples: |
+    - what medicine should i take for Polio diseases?
+    - Which medicine is good for Polio diseases?
+    - can you suggest me medicine for Polio diseases.
+ 
+- intent: Rubella_medicine
+  examples: |
+    - what medicine should i take for Rubella diseases?
+    - Which medicine is good for Rubella diseases?
+    - can you suggest me medicine for Rubella diseases.
+ 
+- intent: Tetanus_medicine
+  examples: |
+    - what medicine should i take for Tetanus diseases?
+    - Which medicine is good for Tetanus diseases?
+    - can you suggest me medicine for Tetanus diseases.
+ 
+- intent: Whooping_cough_medicine
+  examples: |
+    - what medicine should i take for Whooping cough diseases?
+    - Which medicine is good for Whooping cough diseases?
+    - can you suggest me medicine for Whooping cough diseases.
+ 
+- intent: Yellow_fever_medicine
+  examples: |
+    - what medicine should i take for Yellow fever diseases?
+    - Which medicine is good for Yellow fever diseases?
+    - can you suggest me medicine for Yellow fever diseases.
+ 
+- intent: Anthrax_medicine
+  examples: |
+    - what medicine should i take for Anthrax diseases?
+    - Which medicine is good for Anthrax diseases?
+    - can you suggest me medicine for Anthrax diseases.
+ 
+- intent: Chlamydia_medicine
+  examples: |
+    - what medicine should i take for Chlamydia diseases?
+    - Which medicine is good for Chlamydia diseases?
+    - can you suggest me medicine for Chlamydia diseases.
+ 
+- intent: Leprosy_medicine
+  examples: |
+    - what medicine should i take for Leprosy diseases?
+    - Which medicine is good for Leprosy diseases?
+    - can you suggest me medicine for Leprosy diseases.
+ 
+- intent: Phthiriasis_medicine
+  examples: |
+    - what medicine should i take for Phthiriasis diseases?
+    - Which medicine is good for Phthiriasis diseases?
+    - can you suggest me medicine for Phthiriasis diseases.
+ 
+- intent: Salmonella_medicine
+  examples: |
+    - what medicine should i take for Salmonella diseases?
+    - Which medicine is good for Salmonella diseases?
+    - can you suggest me medicine for Salmonella diseases.
+ 
+- intent: Smallpox_medicine
+  examples: |
+    - what medicine should i take for Smallpox diseases?
+    - Which medicine is good for Smallpox diseases?
+    - can you suggest me medicine for Smallpox diseases.
+ 
+- intent: Vaginosis_medicine
+  examples: |
+    - what medicine should i take for Vaginosis diseases?
+    - Which medicine is good for Vaginosis diseases?
+    - can you suggest me medicine for Vaginosis diseases.
+ 
+- intent: Zika_medicine
+  examples: |
+    - what medicine should i take for Zika diseases?
+    - Which medicine is good for Zika diseases?
+    - can you suggest me medicine for Zika diseases.
+ 
+- intent: Stroke_medicine
+  examples: |
+    - what medicine should i take for Stroke diseases?
+    - Which medicine is good for Stroke diseases?
+    - can you suggest me medicine for Stroke diseases.
+ 
+- intent: Cystic_fibrosis_medicine
+  examples: |
+    - what medicine should i take for Cystic fibrosis diseases?
+    - Which medicine is good for Cystic fibrosis diseases?
+    - can you suggest me medicine for Cystic fibrosis diseases.
+ 
+- intent: Autism_medicine
+  examples: |
+    - what medicine should i take for Autism diseases?
+    - Which medicine is good for Autism diseases?
+    - can you suggest me medicine for Autism diseases.
+ 
+- intent: Eczema_medicine
+  examples: |
+    - what medicine should i take for Eczema diseases?
+    - Which medicine is good for Eczema diseases?
+    - can you suggest me medicine for Eczema diseases.
+ 
+- intent: Down_syndrome_medicine
+  examples: |
+    - what medicine should i take for Down syndrome diseases?
+    - Which medicine is good for Down syndrome diseases?
+    - can you suggest me medicine for Down syndrome diseases.
+ 
+- intent: Fibromyalgia_medicine
+  examples: |
+    - what medicine should i take for Fibromyalgia diseases?
+    - Which medicine is good for Fibromyalgia diseases?
+    - can you suggest me medicine for Fibromyalgia diseases.
+ 
+- intent: Muscular_dystrophy_medicine
+  examples: |
+    - what medicine should i take for Muscular dystrophy diseases?
+    - Which medicine is good for Muscular dystrophy diseases?
+    - can you suggest me medicine for Muscular dystrophy diseases.
+ 
+- intent: Adenomyosis_medicine
+  examples: |
+    - what medicine should i take for Adenomyosis diseases?
+    - Which medicine is good for Adenomyosis diseases?
+    - can you suggest me medicine for Adenomyosis diseases.
+ 
+- intent: Sickle_cell_anemia_medicine
+  examples: |
+    - what medicine should i take for Sickle cell anemia diseases?
+    - Which medicine is good for Sickle cell anemia diseases?
+    - can you suggest me medicine for Sickle cell anemia diseases.
+ 
+- intent: scleroderma_medicine
+  examples: |
+    - what medicine should i take for scleroderma diseases?
+    - Which medicine is good for scleroderma diseases?
+    - can you suggest me medicine for scleroderma diseases.
+ 
+- intent: Thrombocythemia_medicine
+  examples: |
+    - what medicine should i take for Thrombocythemia diseases?
+    - Which medicine is good for Thrombocythemia diseases?
+    - can you suggest me medicine for Thrombocythemia diseases.
+ 
+- intent: Alzheimers_medicine
+  examples: |
+    - what medicine should i take for Alzheimer's diseases?
+    - Which medicine is good for Alzheimer's diseases?
+    - can you suggest me medicine for Alzheimer's diseases.
+ 
+- intent: Cerebral_palsy_medicine
+  examples: |
+    - what medicine should i take for Cerebral palsy diseases?
+    - Which medicine is good for Cerebral palsy diseases?
+    - can you suggest me medicine for Cerebral palsy diseases.
+ 
+- intent: Anemia_medicine
+  examples: |
+    - what medicine should i take for Anemia diseases?
+    - Which medicine is good for Anemia diseases?
+    - can you suggest me medicine for Anemia diseases.
+ 
+- intent: Ankylosing_spondylitis_medicine
+  examples: |
+    - what medicine should i take for Ankylosing spondylitis diseases?
+    - Which medicine is good for Ankylosing spondylitis diseases?
+    - can you suggest me medicine for Ankylosing spondylitis diseases.
+ 
+- intent: Lupus_medicine
+  examples: |
+    - what medicine should i take for Lupus diseases?
+    - Which medicine is good for Lupus diseases?
+    - can you suggest me medicine for Lupus diseases.
+ 
+- intent: Multiple_sclerosis_medicine
+  examples: |
+    - what medicine should i take for Multiple sclerosis diseases?
+    - Which medicine is good for Multiple sclerosis diseases?
+    - can you suggest me medicine for Multiple sclerosis diseases.
+ 
+- intent: Ascariasis_medicine
+  examples: |
+    - what medicine should i take for Ascariasis diseases?
+    - Which medicine is good for Ascariasis diseases?
+    - can you suggest me medicine for Ascariasis diseases.
+ 
+- intent: Amnesia_medicine
+  examples: |
+    - what medicine should i take for Amnesia diseases?
+    - Which medicine is good for Amnesia diseases?
+    - can you suggest me medicine for Amnesia diseases.
+ 
+- intent: Anxiety_disorders_medicine
+  examples: |
+    - what medicine should i take for Anxiety disorders diseases?
+    - Which medicine is good for Anxiety disorders diseases?
+    - can you suggest me medicine for Anxiety disorders diseases.
+ 
+- intent: Bladder_stones_medicine
+  examples: |
+    - what medicine should i take for Bladder stones diseases?
+    - Which medicine is good for Bladder stones diseases?
+    - can you suggest me medicine for Bladder stones diseases.
+ 
+- intent: Breast_cysts_medicine
+  examples: |
+    - what medicine should i take for Breast cysts diseases?
+    - Which medicine is good for Breast cysts diseases?
+    - can you suggest me medicine for Breast cysts diseases.
+ 
+- intent: Bronchitis_medicine
+  examples: |
+    - what medicine should i take for Bronchitis diseases?
+    - Which medicine is good for Bronchitis diseases?
+    - can you suggest me medicine for Bronchitis diseases.
+ 
+- intent: Cirrhosis_medicine
+  examples: |
+    - what medicine should i take for Cirrhosis diseases?
+    - Which medicine is good for Cirrhosis diseases?
+    - can you suggest me medicine for Cirrhosis diseases.
+ 
+- intent: Dementia_medicine
+  examples: |
+    - what medicine should i take for Dementia diseases?
+    - Which medicine is good for Dementia diseases?
+    - can you suggest me medicine for Dementia diseases.
+ 
+- intent: Gallstones_medicine
+  examples: |
+    - what medicine should i take for Gallstones diseases?
+    - Which medicine is good for Gallstones diseases?
+    - can you suggest me medicine for Gallstones diseases.
+ 
+- intent: Gastritis_medicine
+  examples: |
+    - what medicine should i take for Gastritis diseases?
+    - Which medicine is good for Gastritis diseases?
+    - can you suggest me medicine for Gastritis diseases.
+ 
+- intent: Iritis_medicine
+  examples: |
+    - what medicine should i take for Iritis diseases?
+    - Which medicine is good for Iritis diseases?
+    - can you suggest me medicine for Iritis diseases.
+ 
+
+
+

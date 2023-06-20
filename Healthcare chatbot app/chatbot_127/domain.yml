@@ -1,0 +1,906 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fungal_infection
+  - allergy
+  - gerd
+  - chronic_cholestasis
+  - Drug_Reaction
+  - peptic_ulcer_Diseases
+  - Aids
+  - diabetes
+  - Gastroenteritis
+  - bronchial_asthma
+  - migraine
+  - cervical_spondylosis
+  - paralysis_brain_hemorrhage
+  - jaundice
+  - malaria
+  - chicken_pox
+  - dengue
+  - typhoid
+  - hepatitis_a
+  - hepatitis_b
+  - hepatitis_c
+  - hepatitis_d
+  - hepatitis_e
+  - alcoholic_hepatitis
+  - tuberculosis
+  - common_cold
+  - pneumonia
+  - dimorphic_hemmorhoids_piles
+  - heart_attack
+  - varicose_veins
+  - hypothyroidism
+  - hyperthyroidism
+  - hypoglycemia
+  - osteoarthristis
+  - arthritis
+  - vertigo_paroymsal_positional_vertigo
+  - acne
+  - urinary_tract_infection
+  - psoriasis
+  - impetigo
+  - fungal_precautions
+  - allergy_precautions
+  - gerd_precautions
+  - chronic_cholestasis_precautions
+  - drug_reaction_precautions
+  - peptic_ulcer_diseae_precautions
+  - aids_precautions
+  - diabetes_precautions
+  - gastroenteritis_precautions
+  - bronchial_asthma_precautions
+  - hypertension_precautions
+  - migraine_precautions
+  - cervical_spondylosis_precautions
+  - paralysis_brain_hemorrhage_precautions
+  - jaundice_precautions
+  - malaria_precautions
+  - chicken_pox_precautions
+  - dengue_precautions
+  - typhoid_precautions
+  - hepatitis_a_precautions
+  - hepatitis_b_precautions
+  - hepatitis_c_precautions
+  - hepatitis_d_precautions
+  - hepatitis_e_precautions
+  - alcoholic_hepatitis_precautions
+  - tuberculosis_precautions
+  - common_cold_precautions
+  - pneumonia_precautions
+  - dimorphic_hemmorhoids_piles_precautions
+  - heart_attack_precautions
+  - varicose_veins_precautions
+  - hypothyroidism_precautions
+  - hyperthyroidism_precautions
+  - hypoglycemia_precautions
+  - osteoarthristis_precautions
+  - arthritis_precautions
+  - vertigo_paroymsal_positional_vertigo_precautions
+  - acne_precautions
+  - urinary_tract_infection_precautions
+  - psoriasis_precautions
+  - impetigo_precautions
+  - fungal_medicine
+  - Food_allergy_medicine
+  - GERD_medicine
+  - Chronic_cholestasis_medicine
+  - Drug_allergy_medicine
+  - Peptic_Ulcer_medicine
+  - Diabetes_medicine
+  - Gastroenteritis_medicine
+  - Asthma_medicine
+  - Hypertension_medicine
+  - Migraine_medicine
+  - Cervical_spondylosis_medicine
+  - Brain_hemorrhage_medicine
+  - Jaundice_medicine
+  - Malaria_medicine
+  - Chicken_pox_medicine
+  - Dengue_medicine
+  - Typhoid_medicine
+  - Hepatitis_A_medicine
+  - Tuberculosis_medicine
+  - Common_Cold_medicine
+  - Pneumonia_medicine
+  - Piles_medicine
+  - Heart_attack_medicine
+  - Varicose_veins_medicine
+  - Hypothyroidism_medicine
+  - Hypoglycemia_medicine
+  - Osteoarthritis_medicine
+  - Arthritis_medicine
+  - Paroxysmal_Positional_Vertigo_medicine
+  - Acne_medicine
+  - Urinary_tract_infection_medicine
+  - Psoriasis_medicine
+  - Impetigo_medicine
+  - Swine_flu_medicine
+  - ADHD_medicine
+  - Bird_flu_medicine
+  - Chikungunya_medicine
+  - Cholera_medicine
+  - Depression_medicine
+  - Epilepsy_medicine
+  - Gonorrhoea_medicine
+  - Gout_medicine
+  - Thyroid_medicine
+  - Herpes_medicine
+  - Insomnia_medicine
+  - Conjunctivitis_medicine
+  - Kidney_stones_medicine
+  - PCOS_medicine
+  - Rabies_medicine
+  - Schizophrenia_medicine
+  - Diphtheria_medicine
+  - E._coli_Infection_medicine
+  - Giardiasis_medicine
+  - Lyme_disease_medicine
+  - Measles_medicine
+  - Meningitis_medicine
+  - Mumps_medicine
+  - Polio_medicine
+  - Rubella_medicine
+  - Tetanus_medicine
+  - Whooping_cough_medicine
+  - Yellow_fever_medicine
+  - Anthrax_medicine
+  - Chlamydia_medicine
+  - Leprosy_medicine
+  - Phthiriasis_medicine
+  - Salmonella_medicine
+  - Smallpox_medicine
+  - Vaginosis_medicine
+  - Zika_medicine
+  - Stroke_medicine
+  - Cystic_fibrosis_medicine
+  - Autism_medicine
+  - Eczema_medicine
+  - Down_syndrome_medicine
+  - Fibromyalgia_medicine
+  - Muscular_dystrophy_medicine
+  - Adenomyosis_medicine
+  - Sickle_cell_anemia_medicine
+  - scleroderma_medicine
+  - Thrombocythemia_medicine
+  - Alzheimers_medicine
+  - Cerebral_palsy_medicine
+  - Anemia_medicine
+  - Ankylosing_spondylitis_medicine
+  - Lupus_medicine
+  - Multiple_sclerosis_medicine
+  - Ascariasis_medicine
+  - Amnesia_medicine
+  - Anxiety_disorders_medicine
+  - Bladder_stones_medicine
+  - Breast_cysts_medicine
+  - Bronchitis_medicine
+  - Cirrhosis_medicine
+  - Dementia_medicine
+  - Gallstones_medicine
+  - Gastritis_medicine
+  - Iritis_medicine
+
+
+
+
+
+
+
+
+responses:
+  utter_greet:
+  - text: "Hey ! How are you?"
+  - text: "Hi !How's its going"
+  - text: "ho ! What's up? "
+  - text: "How have you been?"
+  
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_fugila:
+  - text: 'you are having fungal diseases'
+  - text: " Acording to your symptoms you are having fugal diseases"
+
+  utter_allergy:
+  - text: 'you are suffering from allergy'
+  - text: " Acording to your symptoms you are having allergy"
+
+  utter_gerd:
+  - text: 'you are suffering from GERD'
+  - text: " Acording to your symptoms you are having GERD"
+
+  utter_cholestasis:
+  - text: 'you are suffering from Chronic cholestasis'
+  - text: " Acording to your symptoms you are having Chronic cholestasis"
+
+  utter_Drugdiseases:
+  - text: 'you are suffering from Drug Diseases'
+  - text: " Acording to your symptoms you are having Drug diseases"
+
+  utter_pepticulcer:
+  - text: 'you are suffering from Peptic ulcer Diseases'
+  - text: " Acording to your symptoms you are having Peptic ulcer diseases"
+
+  utter_Aids:
+  - text: 'you are suffering from Peptic Aids Diseases'
+  - text: " Acording to your symptoms you are having Peptic Aids diseases"
+
+  utter_diabetics :
+  - text: 'you are suffering from Diabetics'
+  - text: " Acording to your symptoms you are having Diabetics"
+
+  utter_Gastroenteritis:
+  - text: 'you are suffering from Gastroenteritis'
+  - text: " Acording to your symptoms you are having Gastroenteritis"
+
+  utter_bronchiasthma:
+  - text: 'you are suffering from bronchial_asthma'
+  - text: " Acording to your symptoms you are having bronchial_asthma"
+
+  utter_migraine:
+  - text: 'you are suffering from migraine'
+  - text: " Acording to your symptoms you are having migraine"
+
+  utter_cervindylosis:
+  - text: 'you are suffering from cervical_spondylosis'
+  - text: " Acording to your symptoms you are having cervical_spondylosis"
+
+
+  utter_paralysiraimorrhage:
+  - text: 'you are suffering from paralysis_brain_hemorrhage'
+  - text: " Acording to your symptoms you are having paralysis_brain_hemorrhage"
+
+  utter_jaundice:
+  - text: 'you are suffering from jaundice'
+  - text: 'Acording to your symptoms you are having jaundice'
+
+  utter_malaria:
+  - text: 'you are suffering from malaria'
+  - text: 'Acording to your symptoms you are having malaria'
+
+  utter_chicken_pox:
+  - text: 'you are suffering from chicken pox'
+  - text: 'Acording to your symptoms you are having chicken pox'
+
+  utter_dengue:
+  - text: 'you are suffering from dengue'
+  - text: 'Acording to your symptoms you are having dengue'
+
+  utter_typhoid:
+  - text: 'you are suffering from typhoid'
+  - text: 'Acording to your symptoms you are having typhoid'
+
+  utter_hepatitis_a:
+  - text: 'you are suffering from hepatitis a'
+  - text: 'Acording to your symptoms you are having hepatitis a'
+
+  utter_hepatitis_b:
+  - text: 'you are suffering from hepatitis b'
+  - text: 'Acording to your symptoms you are having hepatitis b'
+
+  utter_hepatitis_c:
+  - text: 'you are suffering from hepatitis c'
+  - text: 'Acording to your symptoms you are having hepatitis c'
+
+  utter_hepatitis_d:
+  - text: 'you are suffering from hepatitis d'
+  - text: 'Acording to your symptoms you are having hepatitis d'
+
+  utter_hepatitis_e:
+  - text: 'you are suffering from hepatitis e'
+  - text: 'Acording to your symptoms you are having hepatitis e'
+
+  utter_alcoholic_hepatitis:
+  - text: 'you are suffering from alcoholic hepatitis'
+  - text: 'Acording to your symptoms you are having alcoholic hepatitis'
+
+  utter_tuberculosis:
+  - text: 'you are suffering from tuberculosis'
+  - text: 'Acording to your symptoms you are having tuberculosis'
+
+  utter_common_cold:
+  - text: 'you are suffering from common cold'
+  - text: 'Acording to your symptoms you are having common cold'
+
+  utter_pneumonia:
+  - text: 'you are suffering from pneumonia'
+  - text: 'Acording to your symptoms you are having pneumonia'
+
+  utter_dimorphic_hemmorhoids_piles:
+  - text: 'you are suffering from dimorphic hemmorhoids piles'
+  - text: 'Acording to your symptoms you are having dimorphic hemmorhoids piles'
+
+  utter_heart_attack:
+  - text: 'you are suffering from heart attack'
+  - text: 'Acording to your symptoms you are having heart attack'
+
+  utter_varicose_veins:
+  - text: 'you are suffering from varicose veins'
+  - text: 'Acording to your symptoms you are having varicose veins'
+
+  utter_hypothyroidism:
+  - text: 'you are suffering from hypothyroidism'
+  - text: 'Acording to your symptoms you are having hypothyroidism'
+
+  utter_hyperthyroidism:
+  - text: 'you are suffering from hyperthyroidism'
+  - text: 'Acording to your symptoms you are having hyperthyroidism'
+
+  utter_hypoglycemia:
+  - text: 'you are suffering from hypoglycemia'
+  - text: 'Acording to your symptoms you are having hypoglycemia'
+
+  utter_osteoarthristis:
+  - text: 'you are suffering from osteoarthristis'
+  - text: 'Acording to your symptoms you are having osteoarthristis'
+
+  utter_arthritis:
+  - text: 'you are suffering from arthritis'
+  - text: 'Acording to your symptoms you are having arthritis'
+
+  utter_vertigo_paroymsal_positional_vertigo:
+  - text: 'you are suffering from vertigo paroymsal positional vertigo'
+  - text: 'Acording to your symptoms you are having vertigo paroymsal positional vertigo'
+
+  utter_acne:
+  - text: 'you are suffering from acne'
+  - text: 'Acording to your symptoms you are having acne'
+
+  utter_urinary_tract_infection:
+  - text: 'you are suffering from urinary tract infection'
+  - text: 'Acording to your symptoms you are having urinary tract infection'
+
+  utter_psoriasis:
+  - text: 'you are suffering from psoriasis'
+  - text: 'Acording to your symptoms you are having psoriasis'
+  
+  utter_impetigo:
+  - text: 'you are suffering from impetigo'
+  - text: 'Acording to your symptoms you are having impetigo'
+
+  utter_fungprecaution:
+  - text: 'You need to bath twice a day,use dettol or neem in bathing water,keep infected area dry, use clean cloths'
+ 
+  utter_allergyprecautions:
+  - text: You need to apply calamine, cover area with bandage, use ice to compress itching
+
+  utter_gerdprecautions:
+  - text: You need to avoid fatty spicy food, avoid lying down after eating, maintain healthy weight, exercise
+
+  utter_chroniccholestasisprecautions:
+  - text: You need to cold baths, anti itch medicine, consult doctor, eat healthy
+
+  utter_drugreactionprecautions:
+  - text: You need to stop irritation, consult nearest hospital, stop taking drug
+
+  utter_pepticulcerdiseaeprecautions:
+  - text: You need to avoid fatty spicy food, consume probiotic food, eliminate milk, limit alcohol
+
+  utter_aidsprecautions:
+  - text: You need to avoid open cuts, wear ppe if possible, consult doctor
+
+  utter_diabetesprecautions:
+  - text: You need to have balanced diet, exercise, consult doctor
+
+  utter_gastroenteritisprecautions:
+  - text: You need to stop eating solid food for while, try taking small sips of water, rest, ease back into eating
+
+  utter_bronchialasthmaprecautions:
+  - text: You need to switch to loose cloothing, take deep breaths, get away from trigger, seek help
+
+  utter_hypertensionprecautions:
+  - text: You need to meditation, salt baths, reduce stress, get proper sleep
+
+  utter_migraineprecautions:
+  - text: You need to meditation, reduce stress, use poloroid glasses in sun, consult doctor
+
+  utter_cervicalspondylosisprecautions:
+  - text: You need to use heating pad or cold pack, exercise, take otc pain reliver, consult doctor
+
+  utter_paralysisbrainhemorrhageprecautions:
+  - text: You need to massage, eat healthy, exercise, consult doctor
+
+  utter_jaundiceprecautions:
+  - text: You need to drink plenty of water, consume milk thistle, eat fruits and high fiberous food, medication
+
+  utter_malariaprecautions:
+  - text: You need to consult nearest hospital, avoid oily food, avoid non veg food, keep mosquitos out
+
+  utter_chickenpoxprecautions:
+  - text: You need to use neem in bathing, consume neem leaves, take vaccine, avoid public places
+
+  utter_dengueprecautions:
+  - text: You need to drink papaya leaf juice, avoid fatty spicy food, keep mosquitos away, keep hydrated
+
+  utter_typhoidprecautions:
+  - text: You need to eat high calorie vegitables, antiboitic therapy, consult doctor, medication
+
+  utter_hepatitisaprecautions:
+  - text: You need to consult nearest hospital, wash hands through, avoid fatty spicy food, medication
+
+  utter_hepatitisbprecautions:
+  - text: You need to consult nearest hospital, vaccination, eat healthy, medication
+
+  utter_hepatitiscprecautions:
+  - text: You need to consult nearest hospital, vaccination, eat healthy, medication
+
+  utter_hepatitisdprecautions:
+  - text: You need to consult doctor, medication, eat healthy
+
+  utter_hepatitiseprecautions:
+  - text: You need to stop alcohol consumption, rest, consult doctor, medication
+
+  utter_alcoholichepatitisprecautions:
+  - text: You need to stop alcohol consumption, consult doctor, medication
+
+  utter_tuberculosisprecautions:
+  - text: You need to cover mouth, consult doctor, medication, rest
+
+  utter_commoncoldprecautions:
+  - text: You need to drink vitamin c rich drinks, take vapour, avoid cold food, keep fever in check
+
+  utter_pneumoniaprecautions:
+  - text: You need to consult doctor, medication, rest
+
+  utter_dimorphichemmorhoidspilesprecautions:
+  - text: You need to avoid fatty spicy food, consume witch hazel, warm bath with epsom salt, consume alovera juice
+
+  utter_heartattackprecautions:
+  - text: You need to call ambulance, chew or swallow asprin, keep calm
+
+  utter_varicoseveinsprecautions:
+  - text: You need to lie down flat and raise the leg high, use oinments, use vein compression, dont stand still for long
+
+  utter_hypothyroidismprecautions:
+  - text: You need to reduce stress, exercise, eat healthy, get proper sleep
+
+  utter_hyperthyroidismprecautions:
+  - text: You need to eat healthy, massage, use lemon balm, take radioactive iodine treatment
+
+  utter_hypoglycemiaprecautions:
+  - text: You need to lie down on side, check in pulse, drink sugary drinks, consult doctor
+
+  utter_osteoarthristisprecautions:
+  - text: You need to acetaminophen, consult nearest hospital, salt baths
+
+  utter_arthritisprecautions:
+  - text: You need to exercise, use hot and cold therapy, try acupuncture, massage
+
+  utter_vertigoparoymsalpositionalvertigoprecautions:
+  - text: You need to lie down, avoid sudden change in body, avoid abrupt head movment, relax
+
+  utter_acneprecautions:
+  - text: You need to bath twice, avoid fatty spicy food, drink plenty of water, avoid too many products
+
+  utter_urinarytractinfectionprecautions:
+  - text: You need to drink plenty of water, increase vitamin c intake, drink cranberry juice, take probiotics
+
+  utter_psoriasisprecautions:
+  - text: You need to wash hands with warm soapy water, stop bleeding using pressure, consult doctor, salt baths
+
+  utter_impetigoprecautions:
+  - text: You need to soak affected area in warm water, use antibiotics, remove scabs with wet compressed cloth, consult doctor
+
+  utter_fungalmedicine:
+  - text: The best medicine for curing are "antifungal cream", "antifungal liquids", "antifungal sprays"
+  - text: The medicine suggested by us is "antifungal cream", "antifungal liquids", "antifungal sprays"
+
+  utter_Foodallergymedicine:
+  - text: The best medicine for curing are antihistamine.
+  - text: The medicine suggested by us is antihistamine.
+ 
+  utter_GERDmedicine:
+  - text: The best medicine for curing are antacid, antidiarrhoeal, proton pump inhibitor.
+  - text: The medicine suggested by us is antacid, antidiarrhoeal, proton pump inhibitor.
+
+  utter_Chroniccholestasismedicine:
+  - text: The best medicine for curing are ursodeoxycholic acid udca.
+  - text: The medicine suggested by us is ursodeoxycholic acid udca.
+
+  utter_Drugallergymedicine:
+  - text: The best medicine for curing are antihistamine, steroid.
+  - text: The medicine suggested by us is antihistamine, steroid.
+
+  utter_PepticUlcermedicine:
+  - text: The best medicine for curing are proton pump inhibitors.
+  - text: The medicine suggested by us is proton pump inhibitors.
+
+  utter_Diabetesmedicine:
+  - text: The best medicine for curing are metformin, sulfonylureas, meglitinides, thiazolidinediones, dpp inhibitors, glp receptor agonists, sglt inhibitors, insulin.
+  - text: The medicine suggested by us is metformin, sulfonylureas, meglitinides, thiazolidinediones, dpp inhibitors, glp receptor agonists, sglt inhibitors, insulin.
+
+  utter_Gastroenteritismedicine:
+  - text: The best medicine for curing are imodium, pepto bismol.
+  - text: The medicine suggested by us is imodium, pepto bismol.
+
+  utter_Asthmamedicine:
+  - text: The best medicine for curing are albuterol, levalbuterol, nan.
+  - text: The medicine suggested by us is albuterol, levalbuterol, nan.
+
+  utter_Hypertensionmedicine:
+  - text: The best medicine for curing are benazepril lotensin, acebutolol sectral.
+  - text: The medicine suggested by us is benazepril lotensin, acebutolol sectral.
+
+  utter_Migrainemedicine:
+  - text: The best medicine for curing are antipsychotics, analgesic, stimulant.
+  - text: The medicine suggested by us is antipsychotics, analgesic, stimulant.
+
+  utter_Cervicalspondylosismedicine:
+  - text: The best medicine for curing are nonsteroidal anti inflammatory drugs nsaids, analgesic.
+  - text: The medicine suggested by us is nonsteroidal anti inflammatory drugs nsaids, analgesic.
+
+  utter_Brainhemorrhagemedicine:
+  - text: The best medicine for curing are antihypertensive drug.
+  - text: The medicine suggested by us is antihypertensive drug.
+
+  utter_Jaundicemedicine:
+  - text: The best medicine for curing are no medicine consult doctor immediately.
+  - text: The medicine suggested by us is no medicine consult doctor immediately.
+
+  utter_Malariamedicine:
+  - text: The best medicine for curing are chloroquine phosphate, artemisinin based combination therapies.
+  - text: The medicine suggested by us is chloroquine phosphate, artemisinin based combination therapies.
+
+  utter_Chickenpoxmedicine:
+  - text: The best medicine for curing are analgesic, antihistamine.
+  - text: The medicine suggested by us is analgesic, antihistamine.
+
+  utter_Denguemedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Typhoidmedicine:
+  - text: The best medicine for curing are chloramphenicol, penicillin.
+  - text: The medicine suggested by us is chloramphenicol, penicillin.
+
+  utter_HepatitisAmedicine:
+  - text: The best medicine for curing are no medicine.
+  - text: The medicine suggested by us is no medicine.
+
+  utter_Tuberculosismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_CommonColdmedicine:
+  - text: The best medicine for curing are nasal decongestants, analgesic.
+  - text: The medicine suggested by us is nasal decongestants, analgesic.
+
+  utter_Pneumoniamedicine:
+  - text: The best medicine for curing are penicillin, isoniazid antibiotics.
+  - text: The medicine suggested by us is penicillin, isoniazid antibiotics.
+
+  utter_Pilesmedicine:
+  - text: The best medicine for curing are steroid, lidocaine.
+  - text: The medicine suggested by us is steroid, lidocaine.
+
+  utter_Heartattackmedicine:
+  - text: The best medicine for curing are intravenous.
+  - text: The medicine suggested by us is intravenous.
+
+  utter_Varicoseveinsmedicine:
+  - text: The best medicine for curing are no medicine consult doctor immediately.
+  - text: The medicine suggested by us is no medicine consult doctor immediately.
+
+  utter_Hypothyroidismmedicine:
+  - text: The best medicine for curing are levothyroxine.
+  - text: The medicine suggested by us is levothyroxine.
+
+  utter_Hypoglycemiamedicine:
+  - text: The best medicine for curing are levothyroxine.
+  - text: The medicine suggested by us is levothyroxine.
+
+  utter_Osteoarthritismedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Arthritismedicine:
+  - text: The best medicine for curing are steroid.
+  - text: The medicine suggested by us is steroid.
+
+  utter_ParoxysmalPositionalVertigomedicine:
+  - text: The best medicine for curing are no medicine.
+  - text: The medicine suggested by us is no medicine.
+
+  utter_Acnemedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Urinarytractinfectionmedicine:
+  - text: The best medicine for curing are penicillin, isoniazid antibiotics.
+  - text: The medicine suggested by us is penicillin, isoniazid antibiotics.
+
+  utter_Psoriasismedicine:
+  - text: The best medicine for curing are steroid.
+  - text: The medicine suggested by us is steroid.
+
+  utter_Impetigomedicine:
+  - text: The best medicine for curing are penicillin, isoniazid antibiotics.
+  - text: The medicine suggested by us is penicillin, isoniazid antibiotics.
+
+  utter_Swineflumedicine:
+  - text: The best medicine for curing are antiviral drugs, analgesic.
+  - text: The medicine suggested by us is antiviral drugs, analgesic.
+
+  utter_ADHDmedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Birdflumedicine:
+  - text: The best medicine for curing are oseltamivir tamiflu.
+  - text: The medicine suggested by us is oseltamivir tamiflu.
+
+  utter_Chikungunyamedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Choleramedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Depressionmedicine:
+  - text: The best medicine for curing are selective serotonin reuptake inhibitors ssris.
+  - text: The medicine suggested by us is selective serotonin reuptake inhibitors ssris.
+
+  utter_Epilepsymedicine:
+  - text: The best medicine for curing are lyrics pregabalin.
+  - text: The medicine suggested by us is lyrics pregabalin.
+
+  utter_Gonorrhoeamedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Goutmedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Thyroidmedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Herpesmedicine:
+  - text: The best medicine for curing are oseltamivir tamiflu.
+  - text: The medicine suggested by us is oseltamivir tamiflu.
+
+  utter_Insomniamedicine:
+  - text: The best medicine for curing are antihistamine.
+  - text: The medicine suggested by us is antihistamine.
+
+  utter_Conjunctivitismedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Kidneystonesmedicine:
+  - text: The best medicine for curing are diuretic.
+  - text: The medicine suggested by us is diuretic.
+
+  utter_PCOSmedicine:
+  - text: The best medicine for curing are metformin.
+  - text: The medicine suggested by us is metformin.
+
+  utter_Rabiesmedicine:
+  - text: The best medicine for curing are oseltamivir tamiflu.
+  - text: The medicine suggested by us is oseltamivir tamiflu.
+
+  utter_Schizophreniamedicine:
+  - text: The best medicine for curing are abilify aripiprazole.
+  - text: The medicine suggested by us is abilify aripiprazole.
+
+  utter_Diphtheriamedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_E.coliInfectionmedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Giardiasismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Lymediseasemedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_Measlesmedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Meningitismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_Mumpsmedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Poliomedicine:
+  - text: The best medicine for curing are polio vaccine opv.
+  - text: The medicine suggested by us is polio vaccine opv.
+
+  utter_Rubellamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Tetanusmedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_Whoopingcoughmedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Yellowfevermedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Anthraxmedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Chlamydiamedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Leprosymedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, steroid.
+  - text: The medicine suggested by us is isoniazid antibiotics, steroid.
+
+  utter_Phthiriasismedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Salmonellamedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Smallpoxmedicine:
+  - text: The best medicine for curing are tecovirimat tpoxx.
+  - text: The medicine suggested by us is tecovirimat tpoxx.
+
+  utter_Vaginosismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics.
+  - text: The medicine suggested by us is isoniazid antibiotics.
+
+  utter_Zikamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Strokemedicine:
+  - text: The best medicine for curing are alteplase.
+  - text: The medicine suggested by us is alteplase.
+
+  utter_Cysticfibrosismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_Autismmedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Eczemamedicine:
+  - text: The best medicine for curing are antihistamine, steroid.
+  - text: The medicine suggested by us is antihistamine, steroid.
+
+  utter_Downsyndromemedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Fibromyalgiamedicine:
+  - text: The best medicine for curing are selective serotonin reuptake inhibitors ssris, analgesic.
+  - text: The medicine suggested by us is selective serotonin reuptake inhibitors ssris, analgesic.
+
+  utter_Musculardystrophymedicine:
+  - text: The best medicine for curing are steroid.
+  - text: The medicine suggested by us is steroid.
+
+  utter_Adenomyosismedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Sicklecellanemiamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_sclerodermamedicine:
+  - text: The best medicine for curing are nifedipine, steroid.
+  - text: The medicine suggested by us is nifedipine, steroid.
+
+  utter_Thrombocythemiamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Alzheimersmedicine:
+  - text: The best medicine for curing are cholinesterase inhibitors.
+  - text: The medicine suggested by us is cholinesterase inhibitors.
+
+  utter_Cerebralpalsymedicine:
+  - text: The best medicine for curing are sedative.
+  - text: The medicine suggested by us is sedative.
+
+  utter_Anemiamedicine:
+  - text: The best medicine for curing are ferrous sulfate.
+  - text: The medicine suggested by us is ferrous sulfate.
+
+  utter_Ankylosingspondylitismedicine:
+  - text: The best medicine for curing are steroid, immunosuppressive drug.
+  - text: The medicine suggested by us is steroid, immunosuppressive drug.
+
+  utter_Lupusmedicine:
+  - text: The best medicine for curing are steroid.
+  - text: The medicine suggested by us is steroid.
+
+  utter_Multiplesclerosismedicine:
+  - text: The best medicine for curing are steroid, immunosuppressive drug.
+  - text: The medicine suggested by us is steroid, immunosuppressive drug.
+
+  utter_Ascariasismedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Amnesiamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Anxietydisordersmedicine:
+  - text: The best medicine for curing are selective serotonin reuptake inhibitors ssris, sedative.
+  - text: The medicine suggested by us is selective serotonin reuptake inhibitors ssris, sedative.
+
+  utter_Bladderstonesmedicine:
+  - text: The best medicine for curing are no medicine.
+  - text: The medicine suggested by us is no medicine.
+
+  utter_Breastcystsmedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Bronchitismedicine:
+  - text: The best medicine for curing are analgesic.
+  - text: The medicine suggested by us is analgesic.
+
+  utter_Cirrhosismedicine:
+  - text: The best medicine for curing are antiviral drugs, isoniazid antibiotics.
+  - text: The medicine suggested by us is antiviral drugs, isoniazid antibiotics.
+
+  utter_Dementiamedicine:
+  - text: The best medicine for curing are no medicine available consult doctor.
+  - text: The medicine suggested by us is no medicine available consult doctor.
+
+  utter_Gallstonesmedicine:
+  - text: The best medicine for curing are statin.
+  - text: The medicine suggested by us is statin.
+
+  utter_Gastritismedicine:
+  - text: The best medicine for curing are isoniazid antibiotics, penicillin.
+  - text: The medicine suggested by us is isoniazid antibiotics, penicillin.
+
+  utter_Iritismedicine:
+  - text: The best medicine for curing are steroid.
+  - text: The medicine suggested by us is steroid.
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

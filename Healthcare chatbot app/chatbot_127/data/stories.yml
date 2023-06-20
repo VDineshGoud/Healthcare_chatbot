@@ -1,0 +1,940 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fujlsnsprav
+  steps:
+  - intent: fungal_infection
+  - action: utter_fugila
+ 
+- story: allergydis
+  steps:
+  - intent: allergy
+  - action: utter_allergy
+
+- story: GERDE
+  steps:
+  - intent: gerd
+  - action: utter_gerd
+
+- story: cholestasis
+  steps:
+  - intent: chronic_cholestasis
+  - action: utter_cholestasis
+
+- story: DRgre
+  steps:
+  - intent: Drug_Reaction
+  - action: utter_Drugdiseases
+
+
+- story: peptceriseae
+  steps:
+  - intent: peptic_ulcer_Diseases
+  - action: utter_pepticulcer
+
+- story: aids
+  steps:
+  - intent: Aids
+  - action: utter_Aids
+
+- story: Diabetics
+  steps:
+  - intent: diabetes
+  - action: utter_diabetics
+
+
+- story: Gastroenteritis
+  steps:
+  - intent: Gastroenteritis
+  - action: utter_Gastroenteritis
+
+- story: bronchihma
+  steps:
+  - intent: bronchial_asthma
+  - action: utter_bronchiasthma
+
+- story: migraine
+  steps:
+  - intent: migraine
+  - action: utter_migraine
+
+- story: cervindylosis
+  steps:
+  - intent: cervical_spondylosis
+  - action: utter_cervindylosis
+
+- story: paralysiraimorrhage
+  steps:
+  - intent: paralysis_brain_hemorrhage
+  - action: utter_paralysiraimorrhage
+
+- story: jauice
+  steps:
+  - intent: jaundice
+  - action: utter_jaundice
+ 
+- story: malajbjjia
+  steps:
+  - intent: malaria
+  - action: utter_malaria
+ 
+- story: chickox
+  steps:
+  - intent: chicken_pox
+  - action: utter_chicken_pox
+ 
+- story: denue
+  steps:
+  - intent: dengue
+  - action: utter_dengue
+ 
+- story: typid
+  steps:
+  - intent: typhoid
+  - action: utter_typhoid
+ 
+- story: hepatitia
+  steps:
+  - intent: hepatitis_a
+  - action: utter_hepatitis_a
+ 
+- story: hepatb
+  steps:
+  - intent: hepatitis_b
+  - action: utter_hepatitis_b
+ 
+- story: hepatic
+  steps:
+  - intent: hepatitis_c
+  - action: utter_hepatitis_c
+ 
+- story: hepatd
+  steps:
+  - intent: hepatitis_d
+  - action: utter_hepatitis_d
+ 
+- story: hepatie
+  steps:
+  - intent: hepatitis_e
+  - action: utter_hepatitis_e
+ 
+- story: alcoholiepatitis
+  steps:
+  - intent: alcoholic_hepatitis
+  - action: utter_alcoholic_hepatitis
+ 
+- story: tuberculosis
+  steps:
+  - intent: tuberculosis
+  - action: utter_tuberculosis
+ 
+- story: commoold
+  steps:
+  - intent: common_cold
+  - action: utter_common_cold
+ 
+- story: pneumonia
+  steps:
+  - intent: pneumonia
+  - action: utter_pneumonia
+ 
+- story: dimorphemmorhoiiles
+  steps:
+  - intent: dimorphic_hemmorhoids_piles
+  - action: utter_dimorphic_hemmorhoids_piles
+ 
+- story: heartack
+  steps:
+  - intent: heart_attack
+  - action: utter_heart_attack
+ 
+- story: varicns
+  steps:
+  - intent: varicose_veins
+  - action: utter_varicose_veins
+ 
+- story: hypothyroidism
+  steps:
+  - intent: hypothyroidism
+  - action: utter_hypothyroidism
+ 
+- story: hyperthyroidism
+  steps:
+  - intent: hyperthyroidism
+  - action: utter_hyperthyroidism
+ 
+- story: hypoglycemia
+  steps:
+  - intent: hypoglycemia
+  - action: utter_hypoglycemia
+ 
+- story: osteoarthristis
+  steps:
+  - intent: osteoarthristis
+  - action: utter_osteoarthristis
+ 
+- story: arthritis
+  steps:
+  - intent: arthritis
+  - action: utter_arthritis
+ 
+- story: vertigo paroymsal positional vertigo
+  steps:
+  - intent: vertigo_paroymsal_positional_vertigo
+  - action: utter_vertigo_paroymsal_positional_vertigo
+ 
+- story: acne
+  steps:
+  - intent: acne
+  - action: utter_acne
+ 
+- story: urinaracfection
+  steps:
+  - intent: urinary_tract_infection
+  - action: utter_urinary_tract_infection
+ 
+- story: psoasis
+  steps:
+  - intent: psoriasis
+  - action: utter_psoriasis
+ 
+- story: impigo
+  steps:
+  - intent: impetigo
+  - action: utter_impetigo
+
+- story: fungaautions
+  steps:
+  - intent: fungal_precautions
+  - action: utter_fungprecaution
+ 
+- story: utter_allrgypre
+  steps:
+  - intent: allergy_precautions
+  - action: utter_allergyprecautions
+ 
+- story: utter_gerpre
+  steps:
+  - intent: gerd_precautions
+  - action: utter_gerdprecautions
+ 
+- story: utter_chroniccholestasispre
+  steps:
+  - intent: chronic_cholestasis_precautions
+  - action: utter_chroniccholestasisprecautions
+ 
+- story: utter_drugreactionpre
+  steps:
+  - intent: drug_reaction_precautions
+  - action: utter_drugreactionprecautions
+ 
+- story: utter_pepticulcerdiseaepre
+  steps:
+  - intent: peptic_ulcer_diseae_precautions
+  - action: utter_pepticulcerdiseaeprecautions
+ 
+- story: utter_aidpre
+  steps:
+  - intent: aids_precautions
+  - action: utter_aidsprecautions
+ 
+- story: utter_diaetespre
+  steps:
+  - intent: diabetes_precautions
+  - action: utter_diabetesprecautions
+ 
+- story: utter_gasroenteritispre
+  steps:
+  - intent: gastroenteritis_precautions
+  - action: utter_gastroenteritisprecautions
+ 
+- story: utter_bronchialasthmapre
+  steps:
+  - intent: bronchial_asthma_precautions
+  - action: utter_bronchialasthmaprecautions
+ 
+- story: utter_hyprtensionpre
+  steps:
+  - intent: hypertension_precautions
+  - action: utter_hypertensionprecautions
+ 
+- story: utter_migainepre
+  steps:
+  - intent: migraine_precautions
+  - action: utter_migraineprecautions
+ 
+- story: utter_cervicalspondylosispre
+  steps:
+  - intent: cervical_spondylosis_precautions
+  - action: utter_cervicalspondylosisprecautions
+ 
+- story: utter_paralysisbrainhemorrhagepre
+  steps:
+  - intent: paralysis_brain_hemorrhage_precautions
+  - action: utter_paralysisbrainhemorrhageprecautions
+ 
+- story: utter_jaudicepre
+  steps:
+  - intent: jaundice_precautions
+  - action: utter_jaundiceprecautions
+ 
+- story: utter_malriapre
+  steps:
+  - intent: malaria_precautions
+  - action: utter_malariaprecautions
+ 
+- story: utter_chickenpoxpre
+  steps:
+  - intent: chicken_pox_precautions
+  - action: utter_chickenpoxprecautions
+ 
+- story: utter_denuepre
+  steps:
+  - intent: dengue_precautions
+  - action: utter_dengueprecautions
+ 
+- story: utter_typoidpre
+  steps:
+  - intent: typhoid_precautions
+  - action: utter_typhoidprecautions
+ 
+- story: utter_hepatitisapre
+  steps:
+  - intent: hepatitis_a_precautions
+  - action: utter_hepatitisaprecautions
+ 
+- story: utter_hepatitisbpre
+  steps:
+  - intent: hepatitis_b_precautions
+  - action: utter_hepatitisbprecautions
+ 
+- story: utter_hepatitiscpre
+  steps:
+  - intent: hepatitis_c_precautions
+  - action: utter_hepatitiscprecautions
+ 
+- story: utter_hepatitisdpre
+  steps:
+  - intent: hepatitis_d_precautions
+  - action: utter_hepatitisdprecautions
+ 
+- story: utter_hepatitisepre
+  steps:
+  - intent: hepatitis_e_precautions
+  - action: utter_hepatitiseprecautions
+ 
+- story: utter_alcoholichepatitispre
+  steps:
+  - intent: alcoholic_hepatitis_precautions
+  - action: utter_alcoholichepatitisprecautions
+ 
+- story: utter_tubrculosispre
+  steps:
+  - intent: tuberculosis_precautions
+  - action: utter_tuberculosisprecautions
+ 
+- story: utter_commoncoldpre
+  steps:
+  - intent: common_cold_precautions
+  - action: utter_commoncoldprecautions
+ 
+- story: utter_pnemoniapre
+  steps:
+  - intent: pneumonia_precautions
+  - action: utter_pneumoniaprecautions
+ 
+- story: utter_dimorphichemmorhoidspilespre
+  steps:
+  - intent: dimorphic_hemmorhoids_piles_precautions
+  - action: utter_dimorphichemmorhoidspilesprecautions
+ 
+- story: utter_heartattackpre
+  steps:
+  - intent: heart_attack_precautions
+  - action: utter_heartattackprecautions
+ 
+- story: utter_varicoseveinspre
+  steps:
+  - intent: varicose_veins_precautions
+  - action: utter_varicoseveinsprecautions
+ 
+- story: utter_hypthyroidismpre
+  steps:
+  - intent: hypothyroidism_precautions
+  - action: utter_hypothyroidismprecautions
+ 
+- story: utter_hyprthyroidismpre
+  steps:
+  - intent: hyperthyroidism_precautions
+  - action: utter_hyperthyroidismprecautions
+ 
+- story: utter_hypglycemiapre
+  steps:
+  - intent: hypoglycemia_precautions
+  - action: utter_hypoglycemiaprecautions
+ 
+- story: utter_ostoarthristispre
+  steps:
+  - intent: osteoarthristis_precautions
+  - action: utter_osteoarthristisprecautions
+ 
+- story: utter_artritispre
+  steps:
+  - intent: arthritis_precautions
+  - action: utter_arthritisprecautions
+ 
+- story: utter_vertigoparoymsalpositionalvertigopre
+  steps:
+  - intent: vertigo_paroymsal_positional_vertigo_precautions
+  - action: utter_vertigoparoymsalpositionalvertigoprecautions
+ 
+- story: utter_acnpre
+  steps:
+  - intent: acne_precautions
+  - action: utter_acneprecautions
+ 
+- story: utter_urinarytractinfectionpre
+  steps:
+  - intent: urinary_tract_infection_precautions
+  - action: utter_urinarytractinfectionprecautions
+ 
+- story: utter_psoiasispre
+  steps:
+  - intent: psoriasis_precautions
+  - action: utter_psoriasisprecautions
+ 
+- story: utter_imptigopre
+  steps:
+  - intent: impetigo_precautions
+  - action: utter_impetigoprecautions
+
+- story: funmedici
+  steps:
+  - intent: fungal_medicine
+  - action: utter_fungalmedicine
+
+ 
+- story: Foodallergymed
+  steps:
+  - intent: Food_allergy_medicine
+  - action: utter_Foodallergymedicine
+ 
+- story: GERmed
+  steps:
+  - intent: GERD_medicine
+  - action: utter_GERDmedicine
+ 
+- story: Chroniccholestasismed
+  steps:
+  - intent: Chronic_cholestasis_medicine
+  - action: utter_Chroniccholestasismedicine
+ 
+- story: Drugallergymed
+  steps:
+  - intent: Drug_allergy_medicine
+  - action: utter_Drugallergymedicine
+ 
+- story: PepticUlcermed
+  steps:
+  - intent: Peptic_Ulcer_medicine
+  - action: utter_PepticUlcermedicine
+ 
+- story: Diaetesmed
+  steps:
+  - intent: Diabetes_medicine
+  - action: utter_Diabetesmedicine
+ 
+- story: Gasroenteritismed
+  steps:
+  - intent: Gastroenteritis_medicine
+  - action: utter_Gastroenteritismedicine
+ 
+- story: Astmamed
+  steps:
+  - intent: Asthma_medicine
+  - action: utter_Asthmamedicine
+ 
+- story: Hyprtensionmed
+  steps:
+  - intent: Hypertension_medicine
+  - action: utter_Hypertensionmedicine
+ 
+- story: Migainemed
+  steps:
+  - intent: Migraine_medicine
+  - action: utter_Migrainemedicine
+ 
+- story: Cervicalspondylosismed
+  steps:
+  - intent: Cervical_spondylosis_medicine
+  - action: utter_Cervicalspondylosismedicine
+ 
+- story: Brainhemorrhagemed
+  steps:
+  - intent: Brain_hemorrhage_medicine
+  - action: utter_Brainhemorrhagemedicine
+ 
+- story: Jaudicemed
+  steps:
+  - intent: Jaundice_medicine
+  - action: utter_Jaundicemedicine
+ 
+- story: Malriamed
+  steps:
+  - intent: Malaria_medicine
+  - action: utter_Malariamedicine
+ 
+- story: Chickenpoxmed
+  steps:
+  - intent: Chicken_pox_medicine
+  - action: utter_Chickenpoxmedicine
+ 
+- story: Denuemed
+  steps:
+  - intent: Dengue_medicine
+  - action: utter_Denguemedicine
+ 
+- story: Typoidmed
+  steps:
+  - intent: Typhoid_medicine
+  - action: utter_Typhoidmedicine
+ 
+- story: HepatitisAmed
+  steps:
+  - intent: Hepatitis_A_medicine
+  - action: utter_HepatitisAmedicine
+ 
+- story: Tubrculosismed
+  steps:
+  - intent: Tuberculosis_medicine
+  - action: utter_Tuberculosismedicine
+ 
+- story: CommonColdmed
+  steps:
+  - intent: Common_Cold_medicine
+  - action: utter_CommonColdmedicine
+ 
+- story: Pnemoniamed
+  steps:
+  - intent: Pneumonia_medicine
+  - action: utter_Pneumoniamedicine
+ 
+- story: Pilsmed
+  steps:
+  - intent: Piles_medicine
+  - action: utter_Pilesmedicine
+ 
+- story: Heartattackmed
+  steps:
+  - intent: Heart_attack_medicine
+  - action: utter_Heartattackmedicine
+ 
+- story: Varicoseveinsmed
+  steps:
+  - intent: Varicose_veins_medicine
+  - action: utter_Varicoseveinsmedicine
+ 
+- story: Hypthyroidismmed
+  steps:
+  - intent: Hypothyroidism_medicine
+  - action: utter_Hypothyroidismmedicine
+ 
+- story: Hypglycemiamed
+  steps:
+  - intent: Hypoglycemia_medicine
+  - action: utter_Hypoglycemiamedicine
+ 
+- story: Ostoarthritismed
+  steps:
+  - intent: Osteoarthritis_medicine
+  - action: utter_Osteoarthritismedicine
+ 
+- story: Artritismed
+  steps:
+  - intent: Arthritis_medicine
+  - action: utter_Arthritismedicine
+ 
+- story: ParoxysmalPositionalVertigomed
+  steps:
+  - intent: Paroxysmal_Positional_Vertigo_medicine
+  - action: utter_ParoxysmalPositionalVertigomedicine
+ 
+- story: Acnmed
+  steps:
+  - intent: Acne_medicine
+  - action: utter_Acnemedicine
+ 
+- story: Urinarytractinfectionmed
+  steps:
+  - intent: Urinary_tract_infection_medicine
+  - action: utter_Urinarytractinfectionmedicine
+ 
+- story: Psoiasismed
+  steps:
+  - intent: Psoriasis_medicine
+  - action: utter_Psoriasismedicine
+ 
+- story: Imptigomed
+  steps:
+  - intent: Impetigo_medicine
+  - action: utter_Impetigomedicine
+ 
+- story: Swineflumed
+  steps:
+  - intent: Swine_flu_medicine
+  - action: utter_Swineflumedicine
+ 
+- story: ADHmed
+  steps:
+  - intent: ADHD_medicine
+  - action: utter_ADHDmedicine
+ 
+- story: Birdflumed
+  steps:
+  - intent: Bird_flu_medicine
+  - action: utter_Birdflumedicine
+ 
+- story: Chiungunyamed
+  steps:
+  - intent: Chikungunya_medicine
+  - action: utter_Chikungunyamedicine
+ 
+- story: Choeramed
+  steps:
+  - intent: Cholera_medicine
+  - action: utter_Choleramedicine
+ 
+- story: Depessionmed
+  steps:
+  - intent: Depression_medicine
+  - action: utter_Depressionmedicine
+ 
+- story: Epiepsymed
+  steps:
+  - intent: Epilepsy_medicine
+  - action: utter_Epilepsymedicine
+ 
+- story: Gonrrhoeamed
+  steps:
+  - intent: Gonorrhoea_medicine
+  - action: utter_Gonorrhoeamedicine
+ 
+- story: Goumed
+  steps:
+  - intent: Gout_medicine
+  - action: utter_Goutmedicine
+ 
+- story: Thyoidmed
+  steps:
+  - intent: Thyroid_medicine
+  - action: utter_Thyroidmedicine
+ 
+- story: Heresmed
+  steps:
+  - intent: Herpes_medicine
+  - action: utter_Herpesmedicine
+ 
+- story: Insmniamed
+  steps:
+  - intent: Insomnia_medicine
+  - action: utter_Insomniamedicine
+ 
+- story: Conunctivitismed
+  steps:
+  - intent: Conjunctivitis_medicine
+  - action: utter_Conjunctivitismedicine
+ 
+- story: Kidneystonesmed
+  steps:
+  - intent: Kidney_stones_medicine
+  - action: utter_Kidneystonesmedicine
+ 
+- story: PCOmed
+  steps:
+  - intent: PCOS_medicine
+  - action: utter_PCOSmedicine
+ 
+- story: Rabesmed
+  steps:
+  - intent: Rabies_medicine
+  - action: utter_Rabiesmedicine
+ 
+- story: Schzophreniamed
+  steps:
+  - intent: Schizophrenia_medicine
+  - action: utter_Schizophreniamedicine
+ 
+- story: Diptheriamed
+  steps:
+  - intent: Diphtheria_medicine
+  - action: utter_Diphtheriamedicine
+ 
+- story: E.coliInfectionmed
+  steps:
+  - intent: E._coli_Infection_medicine
+  - action: utter_E.coliInfectionmedicine
+ 
+- story: Giadiasismed
+  steps:
+  - intent: Giardiasis_medicine
+  - action: utter_Giardiasismedicine
+ 
+- story: Lymediseasemed
+  steps:
+  - intent: Lyme_disease_medicine
+  - action: utter_Lymediseasemedicine
+ 
+- story: Mealesmed
+  steps:
+  - intent: Measles_medicine
+  - action: utter_Measlesmedicine
+ 
+- story: Menngitismed
+  steps:
+  - intent: Meningitis_medicine
+  - action: utter_Meningitismedicine
+ 
+- story: Mumsmed
+  steps:
+  - intent: Mumps_medicine
+  - action: utter_Mumpsmedicine
+ 
+- story: Polomed
+  steps:
+  - intent: Polio_medicine
+  - action: utter_Poliomedicine
+ 
+- story: Rubllamed
+  steps:
+  - intent: Rubella_medicine
+  - action: utter_Rubellamedicine
+ 
+- story: Tetnusmed
+  steps:
+  - intent: Tetanus_medicine
+  - action: utter_Tetanusmedicine
+ 
+- story: Whoopingcoughmed
+  steps:
+  - intent: Whooping_cough_medicine
+  - action: utter_Whoopingcoughmedicine
+ 
+- story: Yellowfevermed
+  steps:
+  - intent: Yellow_fever_medicine
+  - action: utter_Yellowfevermedicine
+ 
+- story: Antraxmed
+  steps:
+  - intent: Anthrax_medicine
+  - action: utter_Anthraxmedicine
+ 
+- story: Chlmydiamed
+  steps:
+  - intent: Chlamydia_medicine
+  - action: utter_Chlamydiamedicine
+ 
+- story: Leposymed
+  steps:
+  - intent: Leprosy_medicine
+  - action: utter_Leprosymedicine
+ 
+- story: Phtiriasismed
+  steps:
+  - intent: Phthiriasis_medicine
+  - action: utter_Phthiriasismedicine
+ 
+- story: Salonellamed
+  steps:
+  - intent: Salmonella_medicine
+  - action: utter_Salmonellamedicine
+ 
+- story: Smalpoxmed
+  steps:
+  - intent: Smallpox_medicine
+  - action: utter_Smallpoxmedicine
+ 
+- story: Vagnosismed
+  steps:
+  - intent: Vaginosis_medicine
+  - action: utter_Vaginosismedicine
+ 
+- story: Zikmed
+  steps:
+  - intent: Zika_medicine
+  - action: utter_Zikamedicine
+ 
+- story: Strkemed
+  steps:
+  - intent: Stroke_medicine
+  - action: utter_Strokemedicine
+ 
+- story: Cysticfibrosismed
+  steps:
+  - intent: Cystic_fibrosis_medicine
+  - action: utter_Cysticfibrosismedicine
+ 
+- story: Autsmmed
+  steps:
+  - intent: Autism_medicine
+  - action: utter_Autismmedicine
+ 
+- story: Eczmamed
+  steps:
+  - intent: Eczema_medicine
+  - action: utter_Eczemamedicine
+ 
+- story: Downsyndromemed
+  steps:
+  - intent: Down_syndrome_medicine
+  - action: utter_Downsyndromemedicine
+ 
+- story: Fibomyalgiamed
+  steps:
+  - intent: Fibromyalgia_medicine
+  - action: utter_Fibromyalgiamedicine
+ 
+- story: Musculardystrophymed
+  steps:
+  - intent: Muscular_dystrophy_medicine
+  - action: utter_Musculardystrophymedicine
+ 
+- story: Adeomyosismed
+  steps:
+  - intent: Adenomyosis_medicine
+  - action: utter_Adenomyosismedicine
+ 
+- story: Sicklecellanemiamed
+  steps:
+  - intent: Sickle_cell_anemia_medicine
+  - action: utter_Sicklecellanemiamedicine
+ 
+- story: sclrodermamed
+  steps:
+  - intent: scleroderma_medicine
+  - action: utter_sclerodermamedicine
+ 
+- story: Thrmbocythemiamed
+  steps:
+  - intent: Thrombocythemia_medicine
+  - action: utter_Thrombocythemiamedicine
+ 
+- story: Alzeimersmed
+  steps:
+  - intent: Alzheimers_medicine
+  - action: utter_Alzheimersmedicine
+ 
+- story: Cerebralpalsymed
+  steps:
+  - intent: Cerebral_palsy_medicine
+  - action: utter_Cerebralpalsymedicine
+ 
+- story: Aneiamed
+  steps:
+  - intent: Anemia_medicine
+  - action: utter_Anemiamedicine
+ 
+- story: Ankylosingspondylitismed
+  steps:
+  - intent: Ankylosing_spondylitis_medicine
+  - action: utter_Ankylosingspondylitismedicine
+ 
+- story: Lupsmed
+  steps:
+  - intent: Lupus_medicine
+  - action: utter_Lupusmedicine
+ 
+- story: Multiplesclerosismed
+  steps:
+  - intent: Multiple_sclerosis_medicine
+  - action: utter_Multiplesclerosismedicine
+ 
+- story: Ascriasismed
+  steps:
+  - intent: Ascariasis_medicine
+  - action: utter_Ascariasismedicine
+ 
+- story: Amnsiamed
+  steps:
+  - intent: Amnesia_medicine
+  - action: utter_Amnesiamedicine
+ 
+- story: Anxietydisordersmed
+  steps:
+  - intent: Anxiety_disorders_medicine
+  - action: utter_Anxietydisordersmedicine
+ 
+- story: Bladderstonesmed
+  steps:
+  - intent: Bladder_stones_medicine
+  - action: utter_Bladderstonesmedicine
+ 
+- story: Breastcystsmed
+  steps:
+  - intent: Breast_cysts_medicine
+  - action: utter_Breastcystsmedicine
+ 
+- story: Brochitismed
+  steps:
+  - intent: Bronchitis_medicine
+  - action: utter_Bronchitismedicine
+ 
+- story: Cirhosismed
+  steps:
+  - intent: Cirrhosis_medicine
+  - action: utter_Cirrhosismedicine
+ 
+- story: Demntiamed
+  steps:
+  - intent: Dementia_medicine
+  - action: utter_Dementiamedicine
+ 
+- story: Galstonesmed
+  steps:
+  - intent: Gallstones_medicine
+  - action: utter_Gallstonesmedicine
+ 
+- story: Gasritismed
+  steps:
+  - intent: Gastritis_medicine
+  - action: utter_Gastritismedicine
+ 
+- story: Iriismed
+  steps:
+  - intent: Iritis_medicine
+  - action: utter_Iritismedicine
+ 
+
+
+
+
+
+  
